@@ -1,0 +1,84 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montes, sans-serif;
+}
+
+@font-face {
+    font-family: montes;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+
+.container {
+    width: fit-content;
+    margin: 5rem auto 0;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.text-input {
+    font-size: 2rem;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 100px;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    height: 3rem;
+}
+
+#task {
+    width: 25rem;
+    border: none;
+    font-size: 1rem;
+}
+
+#task:focus {
+    outline: none;
+}
+
+#add {
+    background-color: purple;
+    color: white;
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.archived {
+    padding: 0;
+}
+
+#cancel {
+    cursor: pointer;
+    opacity: 0;
+}
+
+.task-header {
+    padding-left: 1rem;
+}
+
+.task-body {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    background-color: rgba(128, 0, 128, 0.2);
+    border-radius: 10px;
+    margin: .5rem 0;
+}
+
+.task-check {
+    width: 1.5rem;
+    height: 1.5rem;
+}
